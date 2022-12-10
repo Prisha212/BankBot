@@ -7,15 +7,13 @@ Instructions to run:
 
 2)Activate the environment using source ./venv/bin/activate
 
-3)Download all the dependencies as mentioned in requirement.txt
+3)Clone this repository in your local machine using gh repo clone Prisha212/BankBot
 
-4)Clone this repository in your local machine using gh repo clone Prisha212/BankBot
+4)Train the model using rasa train
 
-5)Train the model using rasa train
+5)Activate the action server in another terminal using rasa run actions
 
-6)Activate the action server in another terminal using rasa run actions
-
-7)Now run the bot in terminal using rasa shell
+6)Now run the bot in terminal using rasa shell
 
 
 
