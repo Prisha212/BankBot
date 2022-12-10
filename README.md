@@ -4,12 +4,19 @@ A virtual assistant powered by RASA 3.0 which provides information on different 
 Instructions to run:
 
 1)Create virtual environment using python3 -m venv ./venv
+
 2)Activate the environment using source ./venv/bin/activate
+
 3)Download all the dependencies as mentioned in requirement.txt
+
 4)Clone this repository in your local machine using gh repo clone Prisha212/BankBot
+
 5)Train the model using rasa train
+
 6)Activate the action server in another terminal using rasa run actions
+
 7)Now run the bot in terminal using rasa shell
+
 
 
 Conversational Flow
