@@ -1,0 +1,95 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+
+
+- story: int
+  steps:
+  - intent: bank_ac
+  - action: utter_bank_ac
+
+- story: stu
+  steps:
+  - intent: int_student
+  - action: utter_int
+  
+- story: dom
+  steps:
+  - intent: dom_student
+  - action: utter_dom
+
+
+
+
+
+
+- story: above
+  steps:
+  - intent: int_age_above
+  - action: utter_age_above 
+
+- story: below
+  steps:
+  - intent: int_age_below
+  - action: utter_age_below
+
+- story: open
+  steps:
+  - intent: int_open
+  - action: utter_open
+
+- story: branch
+  steps:
+  - intent: int_branch
+  - action: utter_branch
+
+- story: happy_weather
+  steps:
+  - intent: weather
+  - action: utter_city
+  - intent: city
+  - action: action_weather_api
+
+
+
+
+- story: service
+  steps:
+  - intent: int_services
+  - action: utter_services
+
+
+- story: interest
+  steps:
+  - intent: int_interest
+  - action: utter_interest
+

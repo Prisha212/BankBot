@@ -1,0 +1,127 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - international
+  - weather
+  - city
+  - bank_ac
+  - int_student
+  - dom_student
+  - int_age_above  
+  - int_age_below
+  - int_open
+  - int_branch
+  - int_services
+  - int_interest
+
+  
+
+  
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_bank_ac
+  - utter_int
+  - utter_age_above
+  - utter_age_below
+  - utter_open  
+  - utter_branch
+  - utter_city
+  - utter_temp
+  - action_weather_api
+  - utter_services
+  - utter_interest
+  - utter_dom
+  
+
+
+responses:
+  utter_greet:
+  - text: "Hey! Welcome I am a  BankBot"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_bank_ac:
+  - text: "Thank you for contacting us,As an SJSU student you are eligible for student checking and saving  account in various bank. Are u a domestic student or international student ?"
+           
+
+  utter_int:
+  - text : "As an international student bank like Chase,US Bank,Bank of America provide Student checking account.Are u above or below 25?"
+
+  utter_dom:
+  - text : "As an domestic  student bank like Chase,US Bank,Bank of America provide Student checking account as well as saving account."
+    
+  utter_age_above:
+  - text : "As you are above 25 ,It is best to create bank account in US bank as it offer opening account with 0 minimum deposit.for other bank u have to always keep minimum deposit of 1500$."
+
+  utter_age_below:
+  - text: "You are best suited for Chase bank student account as it offer free Checking or Saving account to student between age of 17 to 24."
+
+  utter_open:
+  -  text: "To open an bank account carry Below given document to nearest Branch:-
+      1)Passport
+      2)I-20
+      3)Lease Document
+      4)SSN(optional) "
+
+   
+  utter_branch:
+  - text: "Nearest branch of US bank in San Jose
+      1)Willow Glen Branch
+      1099 Lincoln Ave San Jose, CA 95125-3155
+      2)Berryessa Road Safeway ATM
+      1455 Berryessa Road San Jose, CA 95133
+      Hamilton Avenue Safeway ATM
+      3)1530 Hamilton Avenue San Jose, CA 95125"
+
+  utter_city:
+  - text: "which city you want to check for?"
+
+  utter_temp:
+  - text: "Today's temperature is {temp}"
+
+  utter_services:
+  - text: "Bank provide following services:-
+    1)Checking account. ..
+    2)Savings account. ...
+    3)Money market account (MMA) ...
+    4)Certificate of deposit (CD) ...
+    5)Debit card. ...
+    6)Credit card."
+
+  utter_interest:
+  - text: "Thank you for choosing US bank."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+  
+
