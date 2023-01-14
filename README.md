@@ -1,5 +1,5 @@
 # BankBot
-A virtual assistant powered by RASA 3.0 which provides information on different banks in USA for international student.
+A virtual assistant powered by RASA 3.0 which provides information on different banks in USA for international students.
 
 Instructions to run:
 
